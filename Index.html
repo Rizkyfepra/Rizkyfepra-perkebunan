@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PT Perkebunan Nusantara</title>
+</head>
+</html>
+    <title>Web Company Profile</title>
+    <style>
+    :root{ 
+        --green:#1ed127fa;
+    }
+    *{
+        margin:0; padding:0;
+        box-sizing: border-box;
+        font-family: verdana, geneva, tahoma, sans-serif;
+        outline: none; border:none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
+    
+    html{
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+        overflow-x: hidden;
+    }
+    
+    section{
+        pad: 2rem 9%;
+    }
+    
+    .heding{
+        text-align: justify;
+        font-size: 4rem;
+        color: #333;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgba(0,0,0,.1);
+    }
+    
+    .heding span{
+        color: var(--green);
+    }
+    
+  
+    
+    header{
+        position: fixed;
+        top:0; left:0; right:0;
+        background:#fff;
+        padding:2rem 9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    }
+    
+    header .logo{
+        font-size: 2rem;
+        color: #333;
+        font-weight: bolder;
+    }
+    
+    header .logo span{
+        color:var(--green);
+    }
+    
+    header .navbar {
+  transition: clip-path 0.3s ease;
+}
+    
+    header .navbar a{
+        font-size: 2rem;
+        padding:0 1.5rem;
+        color:#666;
+    }
+     
+    header .navbar a:hover{
+        color:var(--green)
+    }
+    
+    header .icons a{
+        font-size: 2,5rem;
+        color:#333;
+        margin-left: 1.5rem;
+    }
+    
+    
+    header .fa-bars{
+        font-size: 3rem;
+        color: #333;
+        border-radius: .5rem;
+        cursor: pointer;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    .home{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        background:url(pexels-pixabay-235925.jpg);
+        background-size: cover;
+        background-position: center;
+    } 
+    
+    .home .content{
+        max-width: 50rem;
+    }
+    
+    .home .content h3{
+        font-size: 6rem;
+        color: #f5f5f5;
+    }
+    
+    .home .content span{
+        font-size: 3.5rem;
+        color: var(--green);
+        padding: 1rem o;
+        line-height: 1.5;
+    }
+      
+    .home .content span{
+        font-size: 3.5rem;
+        color: #e5e5e5;
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+    
+  /* About Section */
+  section.about {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+section.about h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #14532d;
+  text-align: center;
+}
+
+section.about .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+section.about img {
+  width: 30%;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  height: auto;
+}
+
+section.about p {
+  font-size: 2.5rem;
+  color: #555;
+  line-height: 1.7;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  section.about .content {
+    flex-direction: row;
+  }
+  section.about img {
+    width: 40%;
+    margin-right: 2rem;
+  }
+  section.about p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  section.about .content {
+    flex-direction: column;
+  }
+  section.about img {
+    width: 100%;
+    margin-right: 0;
+  }
+  section.about p {
+    width: 100%;
+  }
+}
+
+
+  /* Services Section */
+  section.services {
+    background: #e5f3df;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  section.services h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #14532d;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 20px rgba(0,0,0,0.15);
+  }
+  .service-card svg {
+    width: 60px;
+    height: 60px;
+    fill: #27ae60;
+    margin-bottom: 1.5rem;
+  }
+  .service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #14532d;
+  }
+  .service-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+/*Komoditas*/
+* {
+  box-sizing: border-box;
+}
+
+.komoditas-section {
+  padding: 2rem;
+}
+
+/* Banner */
+.komoditas-banner {
+  background-image: url(pexels-quang-nguyen-vinh-222549-2131784.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  color: #14532d;
+  padding: 80px 20px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.komoditas-banner h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  bottom: 20px;
+}
+
+.komoditas-banner span {
+  bottom: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.komoditas-grid {
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.komoditas-item {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.komoditas-item:hover {
+  transform: scale(1.03);
+}
+
+
+.overlay-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.overlay-content p {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .komoditas-banner h2 {
+font-size: 2rem;
+  }
+}
+    
+    /* contact */
+
+.footer {
+background-color: #059669;
+color: white;
+padding: 40px 20px 20px;
+font-family: 'Segoe UI', sans-serif;
+font-size: 14px;
+}
+
+.footer-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 30px;
+justify-items: center;
+}
+
+.footer-col{
+  text-align: center;
+}
+
+.footer-col h4 {
+font-size: 16px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #fff;
+}
+
+.footer-col ul {
+list-style: none;
+padding: 0;
+margin: 0 0 15px;
+}
+
+.footer-col ul li {
+margin-bottom: 6px;
+color: #e5e5e5;
+}
+
+.footer-col p {
+margin: 5px 0;
+color: #e5e5e5;
+}
+
+
+.footer-bottom {
+  grid-column: 1 / -1;
+margin-top: 30px;
+border-top: 1px solid rgba(255,255,255,0.2);
+padding-top: 10px;
+text-align: center;
+color: #e0e0e0;
+font-size: 13px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* media queries */
+    @media (max-width:991px){
+         html{
+            font-size: 55%;
+         }
+    
+         header{
+            padding: 2rem;
+         }
+         
+         section{
+            padding: 2rem;
+         }
+    
+         .home{
+            background-position: left;
+         }    
+    }
+    
+    @media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+}
+
+    
+    .home .content h3{
+        font-size: 5rem;
+    }
+    
+    .home .content span{
+        font-size: 2.5rem;
+    }
+    
+    @media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heding {
+    font-size: 3rem;
+  }
+  section.about .content {
+    flex-direction: column;
+  }
+  section.about img {
+    width: 100%;
+    margin-right: 0;
+  }
+  section.about p {
+    width: 100%;
+  }
+}
+    
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <header> 
+
+        <a href="#" class="logo">PT Perkebunan Nusantara<span>.</span></a>
+
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+        <a href="#"></a>
+    </header>
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>PT Perkebunan Nusantara</h3> <br />
+            <span>PT Perkebunan Nusantara III (Persero) merupakan Badan Usaha Milik Negara (BUMN) yang bergerak di bidang pengelolaan, pengolahan, dan pemasaran hasil Perkebunan.</span>
+        </div>
+    </section>
+
+  
+    <!-- about -->
+    <section class="about" id="about" aria-labelledby="about-title">
+  <h2 id="about-title" style="text-align: center;">About Us</h2>
+  <div class="content">
+    <img src="pexels-yosiazwan-3752402.jpg" alt="">
+    <p>PT Perkebunan Nusantara III (Persero) merupakan Badan Usaha Milik Negara (BUMN) yang bergerak di bidang pengelolaan, pengolahan, dan pemasaran hasil Perkebunan. Komoditi yang diusahakan adalah kelapa sawit, karet, tebu, teh, kopi, tembakau, aneka kayuan, buah-buahan dan aneka tanaman lainnya.</p>
+  </div>
+</section>
+      
+<!-- service -->
+ <section class="services" id="services" aria-labelledby="services-title">
+<h2 id="services-title">Layanan Kami</h2>
+<div class="services-grid" role="list">
+<article class="service-card" role="listitem" tabindex="0" aria-label="Pengelolaan service">
+<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2C8 10.5 5 17 5 19a7 7 0 0 0 14 0c0-2-3-8.5-7-17z"/></svg>
+<h3>Pengelolaan</h3>
+<p>Kami menyediakan jasa pengelolaan perkebunan yang profesional, termasuk perencanaan, pengawasan, dan pengelolaan sumber daya untuk meningkatkan efisiensi dan produktivitas.</p>
+</article>
+<article class="service-card" role="listitem" tabindex="0" aria-label="Produksi service">
+<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 21h16v-2H4v2zM12 12l4-4 1.41 1.41L13.83 12l3.58 3.59L16 17l-4-4z"/></svg>
+<h3>Produksi</h3>
+<p>Kami menawarkan jasa produksi hasil perkebunan yang berkualitas tinggi, dengan menggunakan teknologi modern dan praktik pertanian yang baik untuk meningkatkan hasil dan kualitas produk.</p>
+</article>
+<article class="service-card" role="listitem" tabindex="0" aria-label="Pemasaran service">
+<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10z"/></svg>
+<h3>Pemasaran</h3>
+<p>Kami menyediakan jasa pemasaran hasil perkebunan yang efektif, termasuk analisis pasar, promosi, dan distribusi untuk meningkatkan penjualan dan meningkatkan pendapatan.</p>
+</article>
+</div>
+</section>
+
+   
+   <section class="komoditas-section">
+    
+    <div class="komoditas-banner">
+      <h2><span>Produk</span><br>Komoditas</h2>
+    </div>
+
+  
+    <div class="komoditas-grid">
+
+      <div class="komoditas-item" style="background-image: url(icon-sawit.jpg);">
+        <div class="overlay-content">
+          <p>Kelapa Sawit</p>
+        </div>
+      </div>
+
+      <div class="komoditas-item" style="background-image: url(icon-karet.jpg);">
+        <div class="overlay-content">
+          <p>Karet</p>
+        </div>
+      </div>
+
+      <div class="komoditas-item" style="background-image: url(icon-tebu.jpg);">
+        <div class="overlay-content">
+          <p>Tebu</p>
+        </div>
+      </div>
+
+      <div class="komoditas-item" style="background-image: url(icon-kopi.jpg);">
+        <div class="overlay-content">
+          <p>Kopi</p>
+        </div>
+      </div>
+
+      <div class="komoditas-item" style="background-image: url(icon-teh.jpg);">
+        <div class="overlay-content">
+          <p>Teh</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   
+   
+       <!-- Footer Section -->
+       
+
+  
+  <footer class="footer">
+    <div class="contact" id="contact">
+      
+     
+<div class="footer-container">
+
+<div class="footer-col">
+<h4>Tentang Kami</h4>
+<ul>
+<li>Profil Perusahaan</li>
+<li>Struktur Organisasi</li>
+<li>Good Corporate Governance</li>
+<li>Informasi Perusahaan</li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Bisnis & Produk</h4>
+<ul>
+<li>Produk Komoditas</li>
+<li>Produk Hilir</li>
+<li>Kawasan Agrowisata</li>
+<li>Kawasan Ekonomi Khusus</li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Layanan Publik</h4>
+<ul>
+<li>Whistleblowing System</li>
+<li>Lapor</li>
+<li>Integrated Procurement System</li>
+<li>Vendor</li>
+<li>Karir</li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h4>Kantor Pusat PT Perkebunan Nusantara III (Persero)</h4>
+<p> Gedung Agro Plaza Lt. 15, Jl. H. R. Rasuna Said Kav. X2 No.1, Kuningan Timur, Setiabudi, Jakarta Selatan 12950 </p>
+<p>Telepon: (+62-21) 29183300</p>
+<p>Fax: (+62-21) 5203030</p>
+<p>Email: sekretariat@holding-perkebunan.com</p>
+
+</div>
+
+<div class="footer-bottom">
+2022–2025 PT. Perkebunan Nusantara III (Persero). All rights reserved. Developed by Nectar Website.
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
